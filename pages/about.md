@@ -1,7 +1,7 @@
 --- 
-layout: layouts/default.hbs
+layout: default.hbs
 title: About
-headerImage: /imgs/old-port.jpg
+headerImage: /assets/imgs/old-port.jpg
 --- 
 
 ## Behind the name "Good Melon" 
