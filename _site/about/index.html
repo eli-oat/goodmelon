@@ -1,61 +1,90 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About || Good Melon</title>
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400" rel="stylesheet">
+    -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/override.css">
     <link rel="stylesheet" type="text/css" href="/css/utility.css">
     <link rel="stylesheet" type="text/css" href="/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400" rel="stylesheet">
 </head>
 <body>
 
-    <header class="px1">
+        <header class="text-white" style="background-image: url(/imgs/old-port.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; height: 45vh;">
+            <div class="shadow">
+                <div class="px1">
+                    <div class="row">
+                        <div class="mobile-col mobile-col-3">
+                            <h1 class="logo"><a href="/" title="Front Page">Good Melon</a></h1>
+                        </div>
+                        <div class="mobile-col mobile-col-9">
+                            <nav class="hide-on-mobile">
+                                <ul>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="show-on-mobile">
+                                <ul>
+                                    <li class="text-right">
+                                        <a onclick="peekaboo('menuDiv','menuTrigger')" id="menuTrigger" aria-label="Toggle Navigation Menu Open or Closed">Menu</a>
+                                    </li>
+                                </ul>
+                                <div id="menuDiv" style="display: none;">
+                                    <nav class="text-right">
+                                        <ul>
+                                            <li><a href="/about">About</a></li>
+                                            <li><a href="/services">Services</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            <li><a href="#blog">Blog</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py2 px1">
+                    <h1 id="pageTitle" style="display: block;">About</h1>
+                </div>
+            </div>
+        </header>
+
+        <main class="container py3 px1">
+            <h2>Behind the name &quot;Good Melon&quot;</h2>
+<p>It's simple, really: My name is Tova Mellen. My first name is Hebrew for &quot;good,&quot; and my surname is misspelled constantly as Mellon, Mellin, Mullen, and my favorite: Melon. In a cruel twist of fate, I am allergic to most varieties of melon.</p>
+<h2>About Tova</h2>
+<p>I grew up in historic Western Massachusetts where I developed a passion for cultural and architectural history, historic preservation, and storytelling. I have over a decade of experience performing research, collections management, exhibit curation, and program design and interpretation. From (accidentally) traversing alligator-infested waters in Louisiana, to getting lost in the labyrinthine gardens of Fontainebleau, France, I don't let any obstacle stop me from exploriing a local museum or archive.</p>
+<p>I have worked with a broad range of museums, historical societies, archives, cultural nonprofits, and government agencies including the city archives of Vichy, France, the Smithsonian Center for Folklife and Cultural Heritage, and Acadia National Park. My work and studies have taken me to every corner of Maine, to France, and the Netherlands. I completed my MA in Arts and Heritage: Policy, Management, and Education at the University of Maastricht, Netherlands in 2015, where I received the unofficial honor of &quot;Nerdiest Thesis Topic&quot; for my research on the history of historical societies.</p>
+<p>I have served on the board of the Mount Desert Island Historical Society for three years. <a href="https://mdihistory.org/wp-content/uploads/Mellen_Holdings-to-Beholdings.pdf">Read my article on changing how we view historical collections in the Society's annual magazine</a>.</p>
+
+        </main>
+
+    
+    <br>
+    <br>
+    
+    <footer class="px1 py4">
         <div class="row">
-            <div class="mobile-col mobile-col-3">
-                <h1 class="logo"><a href="/">Good Melon</a></h1>
+            <div class="col col-5">
+                <h3>Email</h3>
+                <p><a href='&#109;a&#105;l&#116;o&#58;&#37;74&#111;&#118;%61&#64;goo&#37;&#54;4m%&#54;5lon&#46;o%72&#103;'>t&#111;v&#97;&#64;g&#111;odmelo&#110;&#46;org</a></p>
             </div>
-            <div class="mobile-col mobile-col-9">
-                <nav class="hide-on-mobile">
-                    <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/services">Services</a></li>
-                    </ul>
-                </nav>
-                <nav class="show-on-mobile">
-                    <ul>
-                        <li class="text-right"><a href="#menu">Menu</a></li>
-                    </ul>
-                </nav>
+            <div class="col col-7">
+                <h3>Elsewhere</h3>
+                <p><a href="https://www.instagram.com/the_past_place/">Instagram</a></p>
+                <p><a href="#blog">Blog</a></p>
             </div>
-        </div>
-    </header>
-
-
-    <main class="container py3 px1">
-        <h1>About</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quis unde corporis id consequuntur doloribus animi odit minus maiores voluptate omnis accusantium, ipsum deleniti consectetur iure nobis odio voluptates ad.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quis unde corporis id consequuntur doloribus animi odit minus maiores voluptate omnis accusantium, ipsum deleniti consectetur iure nobis odio voluptates ad.</p>
-
-    </main>
-
-    <footer class="py3 px1">
-        <div class="row">
-            <div class="col col-4">
-                <h2>Instagram</h2>
-            </div>
-            <div class="col col-8">
-                <h2><a href="mailto:###">contact@goodmelon.studio</a></h2>
-            </div>
-        </div>
-        <div>
-            <p class="text-center"><small>All Right Reserved</small></p>
         </div>
     </footer>
 
+    <script src="/js/lib.js"></script>
 </body>
 </html>

@@ -1,14 +1,7 @@
 --- 
-layout: default.hbs
-title: Good Mellon
-headerImage: imgs/p.jpg
-headerImageDescription: A brick building with ivy growing on it
+layout: hero.hbs
+title: Welcome
+headerImage: /imgs/card.jpg
 --- 
 
-# Home
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quis unde corporis id consequuntur doloribus animi odit minus maiores voluptate omnis accusantium, ipsum deleniti consectetur iure nobis odio voluptates ad.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quis unde corporis id consequuntur doloribus animi odit minus maiores voluptate omnis accusantium, ipsum deleniti consectetur iure nobis odio voluptates ad.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quis unde corporis id consequuntur doloribus animi odit minus maiores voluptate omnis accusantium, ipsum deleniti consectetur iure nobis odio voluptates ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos quis unde corporis id consequuntur doloribus animi odit minus maiores voluptate omnis accusantium, ipsum deleniti consectetur iure nobis odio voluptates ad.
+I am passionate about providing personalized, affordable services to small museums, historical societies, archives, and cultural organizations. I can work with you on one-time projects and programs as well as recurring or long-term projects.

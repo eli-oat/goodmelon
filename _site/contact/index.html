@@ -1,45 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact || Good Melon</title>
+    <!--
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400" rel="stylesheet">
+    -->
     <link rel="stylesheet" type="text/css" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/override.css">
     <link rel="stylesheet" type="text/css" href="/css/utility.css">
     <link rel="stylesheet" type="text/css" href="/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400" rel="stylesheet">
 </head>
 <body>
 
-    <header class="px1">
-        <div class="row">
-            <div class="mobile-col mobile-col-3">
-                <h1 class="logo"><a href="/">Good Melon</a></h1>
+        <header class="text-white" style="background-image: url(/imgs/ivy.jpg); background-repeat: no-repeat; background-position: center center; background-size: cover; height: 45vh;">
+            <div class="shadow">
+                <div class="px1">
+                    <div class="row">
+                        <div class="mobile-col mobile-col-3">
+                            <h1 class="logo"><a href="/" title="Front Page">Good Melon</a></h1>
+                        </div>
+                        <div class="mobile-col mobile-col-9">
+                            <nav class="hide-on-mobile">
+                                <ul>
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/services">Services</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="#blog">Blog</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="show-on-mobile">
+                                <ul>
+                                    <li class="text-right">
+                                        <a onclick="peekaboo('menuDiv','menuTrigger')" id="menuTrigger" aria-label="Toggle Navigation Menu Open or Closed">Menu</a>
+                                    </li>
+                                </ul>
+                                <div id="menuDiv" style="display: none;">
+                                    <nav class="text-right">
+                                        <ul>
+                                            <li><a href="/about">About</a></li>
+                                            <li><a href="/services">Services</a></li>
+                                            <li><a href="/contact">Contact</a></li>
+                                            <li><a href="#blog">Blog</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py2 px1">
+                    <h1 id="pageTitle" style="display: block;">Contact</h1>
+                </div>
             </div>
-            <div class="mobile-col mobile-col-9">
-                <nav class="hide-on-mobile">
-                    <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                        <li><a href="/services">Services</a></li>
-                    </ul>
-                </nav>
-                <nav class="show-on-mobile">
-                    <ul>
-                        <li class="text-right"><a href="#menu">Menu</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+        </header>
 
-
-    <main class="container py3 px1">
-        
-<h1>Contact</h1>
-
+        <main class="container py3 px1">
+            
 <form action="">
     <label for="email">Your Email</label>
     <input type="email" name="email" placeholder="Your Email Address">
@@ -47,30 +66,33 @@
     <label for="name">Your Name</label>
     <input type="text" name="name" placeholder="First and Last Name">
     <br>
-    <br>
     <label for="message">Your Message</label>
     <br>
     <textarea name="message" id="messageArea" cols="30" rows="10" placeholder="Your message"></textarea>
     <br>
-    <br>
     <input type="submit" value="Send">
 </form>
 
-    </main>
+        </main>
 
-    <footer class="py3 px1">
+    
+    <br>
+    <br>
+    
+    <footer class="px1 py4">
         <div class="row">
-            <div class="col col-4">
-                <h2>Instagram</h2>
+            <div class="col col-5">
+                <h3>Email</h3>
+                <p><a href='&#109;a&#105;l&#116;o&#58;&#37;74&#111;&#118;%61&#64;goo&#37;&#54;4m%&#54;5lon&#46;o%72&#103;'>t&#111;v&#97;&#64;g&#111;odmelo&#110;&#46;org</a></p>
             </div>
-            <div class="col col-8">
-                <h2><a href="mailto:###">contact@goodmelon.studio</a></h2>
+            <div class="col col-7">
+                <h3>Elsewhere</h3>
+                <p><a href="https://www.instagram.com/the_past_place/">Instagram</a></p>
+                <p><a href="#blog">Blog</a></p>
             </div>
-        </div>
-        <div>
-            <p class="text-center"><small>All Right Reserved</small></p>
         </div>
     </footer>
 
+    <script src="/js/lib.js"></script>
 </body>
 </html>

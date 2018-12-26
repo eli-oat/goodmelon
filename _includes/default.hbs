@@ -1,30 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
-    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="/css/override.css">
-    <link rel="stylesheet" type="text/css" href="/css/utility.css">
-    <link rel="stylesheet" type="text/css" href="/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300,400" rel="stylesheet">
+    {{> head}}
 </head>
 <body>
 
-    {{> nav}}
-
     {{#if headerImage}}
-        <div class="px1">
-            <img src="{{headerImage}}" alt="{{headerImageDescription}}" class="hero">
-        </div>
+        <header class="text-white" style="background-image: url({{headerImage}}); background-repeat: no-repeat; background-position: center center; background-size: cover; height: 45vh;">
+            <div class="shadow">
+                {{> nav}}
+                <div class="container py2 px1">
+                    <h1 id="pageTitle" style="display: block;">{{title}}</h1>
+                </div>
+            </div>
+        </header>
+    {{else}}
+        <header>
+            {{> nav}}
+            <div class="container py2 px1">
+                <h1 id="pageTitle" style="display: block;">{{title}}</h1>
+            </div>
+        </header>
     {{/if}}
 
-    <main class="container py3 px1">
-        {{{content}}}
-    </main>
+    {{#if content}}
+        <main class="container py3 px1">
+            {{{content}}}
+        </main>
+    {{/if}}
 
     {{> footer}}
 
+    <script src="/js/lib.js"></script>
 </body>
 </html>
