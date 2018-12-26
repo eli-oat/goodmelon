@@ -1,5 +1,5 @@
 --- 
-layout: default.hbs
+layout: layouts/default.hbs
 title: About
 headerImage: /imgs/old-port.jpg
 --- 

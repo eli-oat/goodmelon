@@ -1,5 +1,5 @@
 --- 
-layout: hero.hbs
+layout: layouts/hero.hbs
 title: Welcome
 headerImage: /imgs/card.jpg
 --- 

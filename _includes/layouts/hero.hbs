@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-    {{> head}}
+    {{> components/head}}
 </head>
 <body>
 
     <div class="text-white" style="background-image: url({{headerImage}}); background-repeat: no-repeat; background-position: center center; background-size: cover; width: 100%; height: 100vh; display: table">
         <div class="shadow--darker" style="display: table-cell">
-            {{> nav}}
+            {{> components/nav}}
             <main class="container py4 px1">
                 <h1>{{title}}</h1>
                 {{{content}}}
@@ -15,6 +15,6 @@
         </div>
     </div>
 
-<script src="/js/lib.js"></script>
+<script src="assets/js/lib.js"></script>
 </body>
 </html>
