@@ -1,8 +1,11 @@
-.DS_Store
-.idea
-.idea/*
-*/.DS_Store
-*/*/.DS_Store
 deploy.sh
 deploy.config
+
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+
+.idea
+.idea/*
+
 _site
