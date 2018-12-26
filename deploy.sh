@@ -5,10 +5,6 @@ set -o errexit
 # Externalize Server Info and Credentials
 source deploy.config || exit 1
 
-# Path to server directory that will hold public and archive directories
-DEPLOY_DIRECTORY_STAGING="~/webapps/orgalorg/goodmelon/"
-DEPLOY_DIRECTORY_PRODUCTION="~/webapps/goodmelon/"
-
 # Relative path from this script to local distribution bundle
 DISTRIBUTION_DIRECTORY="_site"
 

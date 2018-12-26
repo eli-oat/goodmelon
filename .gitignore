@@ -3,4 +3,6 @@
 .idea/*
 */.DS_Store
 */*/.DS_Store
+deploy.sh
+deploy.config
 _site
