@@ -7,3 +7,5 @@ deploy.config
 
 .idea
 .idea/*
+
+node_modules
