@@ -2,6 +2,11 @@
 layout: default.hbs
 title: About
 headerImage: /assets/imgs/old-port.jpg
+tags:
+  - nav
+navtitle: About
+section: about
+permalink: /about/index.html
 --- 
 
 ## Behind the name "Good Melon" 
