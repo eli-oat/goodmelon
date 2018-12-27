@@ -11,6 +11,7 @@ collections:
     folder: '/'
     create: false # Change to true to allow editors to create new pages
     slug: '{{slug}}'
+    identifier_field: title
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
