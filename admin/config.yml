@@ -9,7 +9,6 @@ collections:
   - name: 'pages'
     label: 'Page'
     folder: '/'
-    files: ''
     create: false # Change to true to allow editors to create new pages
     slug: '{{slug}}'
     fields:
