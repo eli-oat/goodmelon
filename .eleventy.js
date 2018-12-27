@@ -11,6 +11,7 @@ module.exports = () => {
             "md",
             "html",
             "js",
+            "admin",
             "css",
             "jpg",
             "png",
