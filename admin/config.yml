@@ -21,6 +21,7 @@ collections:
   - name: 'pages'
     label: 'Page'
     folder: '.'
+    files: 'md'
     create: false # Change to true to allow editors to create new pages
     slug: '{{slug}}'
     fields:
