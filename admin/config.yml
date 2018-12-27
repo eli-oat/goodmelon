@@ -3,3 +3,13 @@ backend:
   branch: master
 
 media_folder: "assets/imgs"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "."
+    filter:
+      field: language
+      value: en
+    fields:
+      - {label: "Language", name: "language"}
