@@ -20,8 +20,7 @@ collections:
   # Our pages e.g. About
   - name: 'pages'
     label: 'Page'
-    folder: '.'
-    files: 'md'
+    folder: '/'
     create: false # Change to true to allow editors to create new pages
     slug: '{{slug}}'
     fields:
