@@ -15,7 +15,8 @@ module.exports = () => {
             "jpg",
             "png",
             "gif",
-            "svg"
+            "svg",
+            "yml"
         ],
 
         passthroughFileCopy: true
