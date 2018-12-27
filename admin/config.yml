@@ -17,4 +17,4 @@ collections:
       - { label: 'Permalink', name: 'permalink', widget: 'string' }
       - { label: 'Navigation Title', name: 'navtitle', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+    - { label: 'Body', name: 'body', widget: 'markdown' }
