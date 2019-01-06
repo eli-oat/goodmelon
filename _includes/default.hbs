@@ -9,22 +9,22 @@
         <header class="text-white" style="background-image: url({{headerImage}}); background-repeat: no-repeat; background-position: center center; background-size: cover; height: 45vh;">
             <div class="shadow">
                 {{> nav}}
-                <div class="container py2 px1">
-                    <h1 id="pageTitle" style="display: block;">{{title}}</h1>
-                </div>
             </div>
         </header>
+        <div class="container p1">
+            <h1 style="display: block;">{{title}}</h1>
+        </div>
     {{else}}
         <header>
             {{> nav}}
             <div class="container py2 px1">
-                <h1 id="pageTitle" style="display: block;">{{title}}</h1>
+                <h1 style="display: block;">{{title}}</h1>
             </div>
         </header>
     {{/if}}
 
     {{#if content}}
-        <main class="container py3 px1">
+        <main class="container px1">
             {{{content}}}
         </main>
     {{/if}}
