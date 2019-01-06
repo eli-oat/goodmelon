@@ -65,6 +65,21 @@ img.hero {
     font-size: 1.75em;
 }
 
+.logo-hero {
+    font-size: 3em !important;
+}
+
+.logo-subtitle {
+    text-transform: none;
+    margin: -1em 0 2em 0;
+}
+
+.header-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .shadow, .shadow--darker {
     height: 100%;
     width: 100%;
@@ -108,7 +123,7 @@ input[type="submit"] {
 }
 
 
-/* === MOBILE FIRST === */
+/* === Assume Mobile, Style for Desktop Below === */
 
 @media screen and (min-width: 36em) {
     nav > ul {
@@ -127,4 +142,14 @@ input[type="submit"] {
         font-size: 4em;
         text-align: center;
     }
+
+    .logo-subtitle {
+        font-size: 2em !important;
+        text-align: center;
+    }
+
+    .logo-hero {
+        font-size: 7em !important;
+    }
+
 }

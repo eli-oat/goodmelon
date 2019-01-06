@@ -7,11 +7,24 @@
 
     <div class="text-white" style="background-image: url({{headerImage}}); background-repeat: no-repeat; background-position: center center; background-size: cover; width: 100%; height: 100vh; display: table">
         <div class="shadow--darker" style="display: table-cell">
-            {{> nav}}
+
+            <div class="px4">
+                <div class="row">
+                    <h1 class="logo logo-hero"><a href="/about" title="Front Page">Good<br>Melon</a></h1>
+                    <h2 class="logo-subtitle">Subtitle text describing the biz.</h2>
+                    <nav>
+                        {{> nav-contents}}
+                    </nav>
+                </div>
+            </div>
+
+            <!--
             <main class="container py4 px1">
                 <h1>{{title}}</h1>
                 {{{content}}}
             </main>
+            -->
+
         </div>
     </div>
 

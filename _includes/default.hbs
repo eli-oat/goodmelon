@@ -6,7 +6,7 @@
 <body>
 
     {{#if headerImage}}
-        <header class="text-white" style="background-image: url({{headerImage}}); background-repeat: no-repeat; background-position: center center; background-size: cover; height: 45vh;">
+        <header class="text-white header-image" style="background-image: url({{headerImage}});">
             <div class="shadow">
                 {{> nav}}
             </div>
@@ -31,6 +31,5 @@
 
     {{> footer}}
 
-    <script src="/assets/js/lib.js"></script>
 </body>
 </html>
