@@ -13,7 +13,8 @@ module.exports = () => {
             "gif",
             "svg",
             "yml",
-            "ttf"
+            "ttf",
+            "txt"
         ],
 
         passthroughFileCopy: true
