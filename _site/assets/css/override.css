@@ -1,8 +1,11 @@
+/*
 @font-face {
     font-family: 'Muli';
     font-style: normal;
-    src: local('Muli Regular'), local('Muli-Regular'), url('fonts/Muli/Muli-Regular.ttf') format('truetype');
+    font-weight: 400;
+    src: local('Muli Bold'), local('Muli-Bold'), url('fonts/Muli/Muli-Bold.ttf') format('truetype');
 }
+*/
 
 body {
     font-family: 'Athelas', 'Georgia', serif;
@@ -14,9 +17,13 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, label, input[type="submit"], nav > ul > li > a, .logo > a {
-    font-family: 'Muli', 'Futura', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-family: 'Futura', 'Helvetica Neue', 'Helvetica', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+main > h1, main h2, main > h3, main > h4, main > h5, main > h6 {
+    margin-top: 1.75em;
 }
 
 nav, footer {
@@ -84,6 +91,7 @@ img.hero {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-image: linear-gradient(-90deg, #6183FF, #FF61ED);
 }
 
 .shadow, .shadow--darker {
