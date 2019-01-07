@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    src: local('Muli Regular'), local('Muli-Regular'), url('fonts/Muli/Muli-Regular.ttf') format('truetype');
+}
+
 body {
     font-family: 'Athelas', 'Georgia', serif;
     font-size: 1.25em;
@@ -8,8 +14,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, label, input[type="submit"], nav > ul > li > a, .logo > a {
-    font-family: 'Futura', 'Helvetica Neue', 'Helvetica', sans-serif;
-    font-weight: 200;
+    font-family: 'Muli', 'Futura', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
