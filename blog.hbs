@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {MobileAppHeaders}
+    <meta charset="utf-8">
+    <title>{block:TagPage}{Tag} - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} -
+        {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+    {block:Description}
+    <meta name="description" content="{MetaDescription}">
+    {/block:Description}
+
+    {block:Hidden}
+    <meta name="text:Google analytics ID" content="">
+    <meta name="color:Background" content=""/>
+    <meta name="color:Container" content=""/>
+    <meta name="color:Header" content=""/>
+    <meta name="color:Link" content=""/>
+    <meta name="color:Text" content="#000"/>
+    <meta name="text:Google Web Font Name" content=''/>
+    <meta name="text:Google Web Font Name with Pluses" content=''/>
+    <meta name="text:Max Container Width in PX" content=''/>
+    <meta name="text:Horizontal Padding in PX" content=''/>
+    <meta name="if:Center Container" content='0'/>
+    <meta name="if:Apply Theme Option Styles" content="0">
+    <meta name="if:Inline Menu" content="0">
+    <meta name="if:Hide Menu" content="0">
+    {/block:Hidden}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+    <link rel="stylesheet" type="text/css" href="https://www.goodmelon.org/assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://www.goodmelon.org/assets/css/override.css">
+    <link rel="stylesheet" type="text/css" href="https://www.goodmelon.org/assets/css/utility.css">
+    <link rel="stylesheet" type="text/css" href="https://www.goodmelon.org/assets/css/grid.css">
+
+    <style>
+        .post-title a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="text-white header-image" style="background-image: url(https://goodmelon.org/assets/imgs/card.jpg);">
+    <div class="shadow">
+        <div class="px4">
+            <div class="row">
+                <h1 class="logo"><a href="/" title="Front Page">Good<br>Melon</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="https://goodmelon.org/about">About</a></li>
+                        <li><a href="https://goodmelon.org/services">Services</a></li>
+                        <li><a href="https://goodmelon.org/contact">Contact</a></li>
+                        <li><a href="https://blog.goodmelon.org">Blog</a></li>
+                    </ul>
+                </nav>
+                <br>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row" style="max-width: 100%;">
+
+    <!-- SUBMENU -->
+    <div class="col col-4">
+        <section class="header px1">
+            <nav class="menu">
+                <div class="search py1 px2">
+                    <form action="/search" method="get">
+                        <input class="search-field" type="text" name="q" value="{SearchQuery}" style="font-size: 0.75em;"/>
+                        <input class="search-btn" type="button" value="Search" alt="Search"/>
+                    </form>
+                </div>
+                <div class="py1 px2">
+                    <a href="/archive">{lang:Archive}</a>
+                </div>
+            </nav>
+        </section>
+    </div>
+
+    <!-- POSTS -->
+    <div class="col col-8">
+        <main class="posts px1">
+            {block:Posts}
+
+            <!-- 1 Post -->
+            <article class="post">
+                {block:Text}
+                {block:Title}
+                <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
+                    {/block:Title}
+                    {Body}
+                    {/block:Text}
+
+                    {block:Photo}
+                    {LinkOpenTag}
+                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+                    {LinkCloseTag}
+
+                    {block:Caption}
+                    <div class="caption">{Caption}</div>
+                    {/block:Caption}
+                    {/block:Photo}
+
+                    {block:Photoset}
+                    {Photoset-500}
+                    {block:Caption}
+                    <div class="caption">{Caption}</div>
+                    {/block:Caption}
+                    {/block:Photoset}
+
+                    {block:Video}
+                    {VideoEmbed-700}
+                    {/block:Video}
+
+                    {block:Panorama}
+                    {LinkOpenTag}
+                    <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                    {LinkCloseTag}{block:Caption}
+                    <div class="caption">{Caption}</div>
+                    {/block:Caption}
+                    {/block:Panorama}
+
+                    {block:Quote}
+                    "{Quote}"
+
+                    {/block:Quote}
+
+                    {block:Link}
+                    <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                    {block:Description}
+                    <div class="description">{Description}</div>
+                    {/block:Description}
+
+                    {/block:Link}
+
+                    {block:Chat}
+                    {block:Title}
+                    <h3><a href="{Permalink}">{Title}</a></h3>
+                    {/block:Title}
+
+                    <ul class="chat">
+                        {block:Lines}
+                        <li class="{Alt} user_{UserNumber}">
+                            {block:Label}
+                            <span class="label">{Label}</span>
+                            {/block:Label}
+                            {Line}
+                        </li>
+                        {/block:Lines}
+                    </ul>
+                    {/block:Chat}
+
+                    {block:Audio}
+                    {AudioEmbed}
+                    {block:Caption}
+                    <div class="caption">
+                        {Caption}
+                    </div>
+                    {/block:Caption}
+                    {/block:Audio}
+
+                    {block:Source}<br/><br/>
+                    <div class="source">{Source}</div>
+                    {/block:Source}
+
+                    {block:Date}<br/>
+                    <a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a>
+                    {/block:Date}
+
+                    {block:PostNotes}<br/><br/><br/><br/><br/>{PostNotes}{/block:PostNotes}
+            </article>
+
+            {/block:Posts}
+        </main>
+
+        <!-- POSTS END -->
+        <div class="pagination">
+            {block:Pagination}{block:PreviousPage}
+            <a href="{PreviousPage}">Previous</a>&nbsp;
+            {/block:PreviousPage}{block:JumpPagination length="5"}{block:CurrentPage}
+            <span class="current_page">{PageNumber}</span>&nbsp;
+            {/block:CurrentPage}{block:JumpPage}
+            <a class="jump_page" href="{URL}">{PageNumber}</a>&nbsp;
+            {/block:JumpPage}{/block:JumpPagination}{block:NextPage}
+            <a href="{NextPage}">Next</a>
+            {/block:NextPage}<br/><br/>{/block:Pagination}
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+<footer class="px1 py4">
+    <div class="container">
+        <div class="row">
+            <div class="col col-6">
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:info@goodmelon.org">info@goodmelon.org</a>
+                </p>
+            </div>
+            <div class="col col-6">
+                <h3>Elsewhere</h3>
+                <p><a href="https://www.instagram.com/the_past_place/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </p>
+                <p><a href="#blog">Blog</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row px4" style="margin-top: 4em;">
+        <div class="text-center">
+            <p style="color: #707070;">
+                <small>Photo Credit: Tova Mellen,<br>Good Melon</small>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

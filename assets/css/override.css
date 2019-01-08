@@ -124,7 +124,7 @@ input[type="text"], input[type="email"], textarea {
     margin: 0 0 1em 0;
 }
 
-input[type="submit"] {
+input[type="submit"], .search-btn {
     display: block;
     margin: 0 auto;
     padding: 0.25em 0;
