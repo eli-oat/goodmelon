@@ -38,6 +38,7 @@ Good Melon can help your organization find the balance between collections secur
 # CONTENT MANAGEMENT
 
 There are countless ways for organizations to engage with their local and global communities via print and digital materials, social media platforms, and webpages. It is often difficult to know where to start and how to use limited resources to make the best impact. Good Melon can assist with creating consistent messaging, engaging storytelling, and professional and accurate content from monthly newsletters to Instagram posts.
+
 - Organization style guides
 - Social media account management
 - Web content creation
