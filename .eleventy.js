@@ -8,6 +8,7 @@ module.exports = () => {
             "js",
             "admin",
             "css",
+            "pdf",
             "jpg",
             "png",
             "gif",
