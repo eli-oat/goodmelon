@@ -44,7 +44,7 @@ nav > ul > li > a, .logo > a {
     text-decoration: none;
 }
 
-nav > ul > li > a:hover, .logo > a:hover, a:hover, input[type="submit"]:hover {
+nav > ul > li > a:hover, .logo > a:hover, a:hover, input[type="submit"]:hover, .search-btn:hover, input[type="button"]:hover {
     opacity: 0.5;
     transition: 0.3s;
     cursor: pointer;
@@ -130,6 +130,17 @@ input[type="submit"] {
     padding: 0.25em 0;
     text-align: center;
     width: 75%;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    text-transform: uppercase;
+}
+
+.search-btn, input[type="button"] {
+    font-family: 'Futura', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-size: 0.75em;
+    padding: 4px 7px;
+    display: block;
     border: none;
     background-color: cornflowerblue;
     color: white;

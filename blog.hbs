@@ -41,6 +41,10 @@
             text-decoration: none;
             color: inherit;
         }
+
+        .tmblr-iframe, .tmblr-iframe--unified-controls, .tmblr-iframe--loaded, .iframe-controls--desktop {
+            display: none !important;
+        }
     </style>
 
 </head>
@@ -71,9 +75,10 @@
     <div class="col col-4">
         <section class="header px1">
             <nav class="menu">
-                <div class="search py1 px2">
+                <div class="search py2 px2">
                     <form action="/search" method="get">
-                        <input class="search-field" type="text" name="q" value="{SearchQuery}" style="font-size: 0.75em;"/>
+                        <input class="search-field" type="text" name="q" value="{SearchQuery}"
+                               style="font-size: 0.75em;"/>
                         <input class="search-btn" type="button" value="Search" alt="Search"/>
                     </form>
                 </div>
@@ -94,88 +99,88 @@
                 {block:Text}
                 {block:Title}
                 <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
-                    {/block:Title}
-                    {Body}
-                    {/block:Text}
+                {/block:Title}
+                {Body}
+                {/block:Text}
 
-                    {block:Photo}
-                    {LinkOpenTag}
-                    <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
-                    {LinkCloseTag}
+                {block:Photo}
+                {LinkOpenTag}
+                <img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>
+                {LinkCloseTag}
 
-                    {block:Caption}
-                    <div class="caption">{Caption}</div>
-                    {/block:Caption}
-                    {/block:Photo}
+                {block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+                {/block:Photo}
 
-                    {block:Photoset}
-                    {Photoset-500}
-                    {block:Caption}
-                    <div class="caption">{Caption}</div>
-                    {/block:Caption}
-                    {/block:Photoset}
+                {block:Photoset}
+                {Photoset-500}
+                {block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+                {/block:Photoset}
 
-                    {block:Video}
-                    {VideoEmbed-700}
-                    {/block:Video}
+                {block:Video}
+                {VideoEmbed-700}
+                {/block:Video}
 
-                    {block:Panorama}
-                    {LinkOpenTag}
-                    <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
-                    {LinkCloseTag}{block:Caption}
-                    <div class="caption">{Caption}</div>
-                    {/block:Caption}
-                    {/block:Panorama}
+                {block:Panorama}
+                {LinkOpenTag}
+                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                {LinkCloseTag}{block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+                {/block:Panorama}
 
-                    {block:Quote}
-                    "{Quote}"
+                {block:Quote}
+                "{Quote}"
 
-                    {/block:Quote}
+                {/block:Quote}
 
-                    {block:Link}
-                    <a href="{URL}" class="link" {Target}>{Name}</a>
+                {block:Link}
+                <a href="{URL}" class="link" {Target}>{Name}</a>
 
-                    {block:Description}
-                    <div class="description">{Description}</div>
-                    {/block:Description}
+                {block:Description}
+                <div class="description">{Description}</div>
+                {/block:Description}
 
-                    {/block:Link}
+                {/block:Link}
 
-                    {block:Chat}
-                    {block:Title}
-                    <h3><a href="{Permalink}">{Title}</a></h3>
-                    {/block:Title}
+                {block:Chat}
+                {block:Title}
+                <h3><a href="{Permalink}">{Title}</a></h3>
+                {/block:Title}
 
-                    <ul class="chat">
-                        {block:Lines}
-                        <li class="{Alt} user_{UserNumber}">
-                            {block:Label}
-                            <span class="label">{Label}</span>
-                            {/block:Label}
-                            {Line}
-                        </li>
-                        {/block:Lines}
-                    </ul>
-                    {/block:Chat}
+                <ul class="chat">
+                    {block:Lines}
+                    <li class="{Alt} user_{UserNumber}">
+                        {block:Label}
+                        <span class="label">{Label}</span>
+                        {/block:Label}
+                        {Line}
+                    </li>
+                    {/block:Lines}
+                </ul>
+                {/block:Chat}
 
-                    {block:Audio}
-                    {AudioEmbed}
-                    {block:Caption}
-                    <div class="caption">
-                        {Caption}
-                    </div>
-                    {/block:Caption}
-                    {/block:Audio}
+                {block:Audio}
+                {AudioEmbed}
+                {block:Caption}
+                <div class="caption">
+                    {Caption}
+                </div>
+                {/block:Caption}
+                {/block:Audio}
 
-                    {block:Source}<br/><br/>
-                    <div class="source">{Source}</div>
-                    {/block:Source}
+                {block:Source}<br/><br/>
+                <div class="source">{Source}</div>
+                {/block:Source}
 
-                    {block:Date}<br/>
-                    <a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a>
-                    {/block:Date}
+                {block:Date}<br/>
+                <a href="{Permalink}">{Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}</a>
+                {/block:Date}
 
-                    {block:PostNotes}<br/><br/><br/><br/><br/>{PostNotes}{/block:PostNotes}
+                {block:PostNotes}<br/><br/><br/><br/><br/>{PostNotes}{/block:PostNotes}
             </article>
 
             {/block:Posts}
