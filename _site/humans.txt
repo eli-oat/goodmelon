@@ -1,0 +1,11 @@
+/* TEAM */
+Your title: Tova Mellen
+Site: Good Melon, tova@goodmelon.org
+Location: Portland, Maine, USA.
+
+
+/* SITE */
+Built by: Eli Mellen, eli@beardandbeanie.com
+URL: https://eli.li
+Standards: HTML5, CSS3
+Software: 11ty.js
