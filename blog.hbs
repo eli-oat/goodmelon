@@ -63,6 +63,10 @@
         .tmblr-iframe, .tmblr-iframe--unified-controls, .tmblr-iframe--loaded, .iframe-controls--desktop {
             display: none !important;
         }
+
+        img {
+            width: 100% !important;
+        }
     </style>
 
 </head>
@@ -113,7 +117,7 @@
             {block:Posts}
 
             <!-- 1 Post -->
-            <article class="post">
+            <article class="post py1 container">
                 {block:Text}
                 {block:Title}
                 <h2 class="post-title"><a href="{Permalink}">{Title}</a></h2>
