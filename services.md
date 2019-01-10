@@ -9,7 +9,7 @@ section: services
 permalink: /services/index.html
 --- 
 
-Good Melon is passionate about providing personalized, affordable services to small museums, historical societies, archives, and cultural organizations. Good Melon can work with your organization on one-time projects and programs as well as recurring or long-term projects.
+Good Melon is passionate about providing personalized, affordable services to small museums, historical societies, archives, and cultural organizations. We can work with your organization on one-time projects and programs as well as recurring or long-term projects.
 
 
 # STRATEGIC PLANNING
