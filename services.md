@@ -48,4 +48,4 @@ There are countless ways for organizations to engage with their local and global
 
 ## OTHER
 
-Is your organization looking for assistance with projects not listed above? Do you need another pair of eyes to look over a grant proposal, or have exhibit panel texts that need fine-tuning? Contact us at <info@goodmelon.org>.
+Do you need another pair of eyes to look over a grant proposal, or have exhibit panel texts that need fine-tuning? Are you a non-historical organization looking for strategic planning or collections management services? Contact us at <info@goodmelon.org>.
