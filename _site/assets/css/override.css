@@ -60,6 +60,19 @@ a:hover, a:visited {
     transition: 0.3s;
 }
 
+blockquote {
+    padding: 0;
+    margin: 0;
+}
+
+blockquote > p {
+    line-height: 1.25em;
+    text-transform: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
 footer {
     background-color: #e8e8e8;
 }

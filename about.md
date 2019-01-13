@@ -9,6 +9,8 @@ section: about
 permalink: /about/index.html
 --- 
 
+> Heritage begins in the past, but is not bound to it. Let's work together to tell stories that are accessible, personal, and relevant to diverse communities.
+
 # BEHIND THE NAME
 
 It's simple: My name is Tova Mellen. Tova is Hebrew for "good," and my surname is misspelled constantly as Mellon, Mellin, Mullen, and my favorite: Melon. In a cruel twist of fate, I am allergic to most varieties of melon.
