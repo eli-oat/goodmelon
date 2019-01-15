@@ -119,7 +119,7 @@ img.hero {
 }
 
 .shadow--darker {
-    background-color: rgba(255, 255, 255, 0.015);
+    background-color: rgba(65, 65, 65, 0.25);
 }
 
 form {
