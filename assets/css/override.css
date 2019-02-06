@@ -7,6 +7,13 @@
 }
 */
 
+
+:root {
+    --blue: rgb(136, 173, 243);
+    --blue-lighter: rgba(136, 173, 243, 0.25);
+    --pink: rgb(255, 209, 220);
+}
+
 body {
     font-family: 'Athelas', 'Georgia', serif;
     font-size: 1.25em;
@@ -50,13 +57,18 @@ nav > ul > li > a:hover, .logo > a:hover, a:hover, input[type="submit"]:hover, .
     cursor: pointer;
 }
 
-a {
-    color: cornflowerblue;
+a, a:visited {
+    color: var(--blue);
 }
 
-a:hover, a:visited {
-    color: cornflowerblue;
-    opacity: 0.5;
+main a {
+    text-decoration: none;
+    border-bottom: 3px solid var(--pink);
+}
+
+main a:hover {
+    color: black;
+    background-color: var(--pink);
     transition: 0.3s;
 }
 
@@ -74,7 +86,7 @@ blockquote > p {
 }
 
 footer {
-    background-color: #e8e8e8;
+    background-color: rgba(112, 112, 112, 0.025);
 }
 
 .content > img, img.hero {
@@ -98,6 +110,10 @@ img.hero {
 .logo-subtitle {
     text-transform: none;
     margin: -1em 0 2em 0;
+}
+
+header {
+    border-bottom: 1em solid var(--pink);
 }
 
 .header-image {
@@ -155,7 +171,7 @@ input[type="submit"] {
     padding: 4px 7px;
     display: block;
     border: none;
-    background-color: cornflowerblue;
+    background-color: rgb(136, 173, 243);
     color: white;
     text-transform: uppercase;
 }
